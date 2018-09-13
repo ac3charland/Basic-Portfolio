@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
 <body>
     <header>
-        <h1>Alex Charland</h1>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <div class="container">
+            <h1 class="site-title">Alex Charland</h1>
+            <a class="top-links" href="contact.html">Contact</a>
+            <a class="top-links separated" href="portfolio.html">Portfolio</a>
+            <a class="top-links separated" href="index.html">About</a>
+        </div>
     </header>
-
-    <div>
-        
+    <div class="container">
+        <main class="content">
+            <h1 class="page-title">Contact</h1>
+            <form>
+                <h4>Name</h4>
+                <input class="form-field" type="text" onfocus="this.value=''" name="name" value="John Smith">
+                <h4>Email</h4>
+                <input class="form-field"  type="text" onfocus="this.value=''" name="email" value="name@example.com">
+                <h4>Message</h4>
+                <textarea class="form-field"  name="message" onfocus="this.value=''" rows="10">Type a message...</textarea>
+                <br>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+            
+        </main>
     </div>
 
     <footer>
-        <p>Copyright ©2018 AC3 Industries</p>
+        Copyright ©2018 AC3 Industries
     </footer>
     
 </body>
