@@ -5,11 +5,15 @@
 
 body {
     margin: 0px;
-    background-image: url("concrete_seamless.png");
+    background-image: url("../images/concrete_seamless.png");
 }
 
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+a:hover {
+    color: #4aaaa5;
 }
 
 p {
@@ -23,7 +27,10 @@ header {
     border-bottom: 3px solid #cccccc;
     margin: 0px;
     height: 80px;
-    position: relative;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
 }
 
 footer {
@@ -73,9 +80,10 @@ form {
 }
 
 .content {
+    position: relative;
+    top: 120px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    margin-top: 40px;
     height: auto;
     width: 100%;
 }
@@ -128,11 +136,18 @@ form {
 }
 
 .photo-tile {
-    margin: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     float: left;
     width: 200px;
     height: 150px;
+    text-decoration: none;
 }
+
+.photo-tile:hover {
+    opacity: 0.7;
+}
+
 
 .portfolio-img {
     margin: 0px;
@@ -148,4 +163,10 @@ form {
     padding: 10px;
     background-color: #4aaaa5;
     color: white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
